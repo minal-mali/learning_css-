@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:150px;
+            height: 150px;
+            background-color: blue;
+            position: relative;
+            animation:myfirstanimation;
+            -webkit-animation:myfirstanimation;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+            animation-delay:5s;
+            animation-direction: alternate-reverse;
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes myfirstanimation
+        {
+            0%{background-image: url('/images/f1.jpg');left:0px; top:0px}
+            25%{background-image: url('/images/f2.jpg');left:300px; top:0px}
+            50%{background-image: url('/images/f3.jpg');left:300px; top:300px}
+            75%{background-image: url('/images/f4.jpg');left:0px; top:300px}
+            100%{background-image: url('/images/f5.jpg');left:0px; top:0px}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
