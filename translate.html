@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.card_demo{
+             display:flex;
+             flex-direction:row;
+             justify-content: space-evenly;
+}
+.card_1{
+          height:180px;
+          width:300px;
+          background-color:blue;
+          border-radius:8px;
+          transition: transform 2.5s ease;
+          background-image: url("/images/f1.jpg");
+          background-size:cover;
+}
+.card_1:hover{
+          transform: rotateY(180deg);
+           background-image: url("/images/f2.jpg");
+            background-size: cover;
+}
+.card_1:hover::after{
+          content:"File";
+          color:white;
+          font-size:25px;
+          padding-left:120px;
+          padding-bottom: 30px;
+}
+.card_1:hover .w1{
+    opacity:0;
+    padding-top: 0px;
+}
+.card_2{
+          height:180px;
+          width:300px;
+          border-radius:8px;
+          transition: transform 5s ease;
+          background-image: url("/images/f3.jpg");
+          background-size:cover;
+}
+.card_2:hover{
+          transform: rotateY(180deg);
+          padding: 0px;
+          background-image: url("/images/f4.jpg");
+           background-size: cover;
+}
+.card_2:hover::after{
+          content:"File";
+          color:white;
+          font-size:25px;
+          padding-left:120px;
+          padding-bottom: 30px;
+}
+.card_2:hover .w1{
+    opacity:0;
+    padding-top: 0px;
+}
+.card_3{
+          height:180px;
+          width:300px;
+          border-radius:8px;
+          transition: transform 5s ease;
+          background-image: url("/images/f6.jpg");
+          background-size:cover;
+}
+.card_3:hover{
+          transform: rotateY(180deg);
+          background-image: url("/images/f5.jpg");
+            background-size: cover;
+          
+}
+.card_3:hover::after{
+          content:"File";
+          color:white;
+          font-size:25px;
+          padding-left:120px;
+          padding-bottom: 30px;
+}
+.card_3:hover .w1{
+    opacity:0;
+    padding-top: 0px;
+}
+.card_4{
+          height:180px;
+          width:300px;
+          border-radius:8px;
+          transition: transform 5s ease;
+          background-image: url("/images/f7.jpg");
+          background-size:cover;
+}
+.card_4:hover{
+          transform: rotateY(180deg);
+         background-image: url("/images/f8.jpg");
+            background-size: cover;
+          
+}
+.card_4:hover::after{
+          content:"File";
+          color:white;
+          font-size:25px;
+          padding-left:120px;
+          padding-bottom: 30px;
+}
+.card_4:hover .w1{
+    opacity:0;
+    padding-top: 0px;
+}
+.w1{
+     color:white;
+     font-size:25px;
+     text-align:center;
+     padding-top: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="card_demo">
+    <div class="card_1"><h3 class="w1">Front1:Home</div>
+    <div class="card_2"><h3 class="w1">Front2:Contact</h3></div>
+    <div class="card_3"><h3 class="w1">Front3:Services</h3></div>
+    <div class="card_4"><h3 class="w1">Front4:About</h3></div>
+    </div>
+</body>
+</html>
