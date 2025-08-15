@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(min-width: 320px) and (max-width: 767px) {
+            body{
+                font-size:20px;
+                background: black;
+            }
+            p{
+                display:none;
+            }
+            h1,h3{
+                color:lightblue;
+            }
+            .img1{
+                display: none;
+            }
+        }
+        @media (min-width: 768px){
+            body{
+                background-color: pink;
+            }
+        }
+         @media (min-width: 1224px){
+            body{
+                background-color: purple;
+            }
+        }
+         @media (min-width: 1824px){
+            body{
+                background-color: yellowgreen;
+            }
+        }
+         @media (min-width: 850px) and (max-width: 950px){
+            body{
+                background-color: yellow;
+            }
+            h1,h3{
+                color: blue;
+                font-size:100px;
+            }
+            .img1{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum suscipit numquam beatae eligendi sequi, quibusdam blanditiis sed. Provident neque, sapiente distinctio quae veritatis, quia assumenda illum accusamus sequi eius voluptate?</p>
+    <h1> CSS Media Queries</h1>
+    <p>The background will change according to the viewport width change.</p>
+    <img class="img1" src="images/f1.jpg" alt="social">
+
+    <h3> Smartphones- <span class = "details">from 320px and up</span>(min-width:320px)</h3>
+    <p>BLUE</p>
+    <br>
+    <h3>Tablets, iPads (portrait)-<span class="details">from 768px and up</span>(min-width:768px)</h3>
+    <p>GREEN</p>
+</body>
+</html>
